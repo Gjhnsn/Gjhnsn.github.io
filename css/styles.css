@@ -27,6 +27,7 @@ h4 {
   background-size: cover;
   position: relative;
   border-radius: 0;
+  background-attachment: fixed;
 }
 
 .jumbotron h1 {
@@ -34,15 +35,30 @@ h4 {
 }
 
 .divider_1 {
-  height: 50vh;
+  height: 80vh;
   width: 100%;
-  background-color: lightgreen;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(11, 110, 80),
+    rgb(54, 161, 129)
+  );
   transform: skewY(11deg);
+  position: absolute;
+  top: 850px;
 }
 
 /* medium screen */
 @media only screen and (max-width: 768px) {
   .jumbotron h1 {
     font-size: 3rem;
+  }
+}
+
+/* xl screen */
+@media only screen and (min-width: 1500px) {
+  .jumbotron h1,
+  p {
+    position: relative;
+    right: 200px;
   }
 }
