@@ -3,6 +3,46 @@
   padding: 0;
 }
 
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Varela Round", sans-serif;
+}
+
 .gj_logo {
   height: 50px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url(/img/night-forest.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0;
+}
+
+.jumbotron h1 {
+  margin-top: 20vh;
+}
+
+.divider_1 {
+  height: 50vh;
+  width: 100%;
+  background-color: lightgreen;
+  transform: skewY(11deg);
+}
+
+/* medium screen */
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
 }
