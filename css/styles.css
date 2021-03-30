@@ -77,12 +77,17 @@ h4 {
   letter-spacing: 5px;
 }
 
+/* .projects {
+  min-width: 1200px;
+} */
+
 .carousel_section {
-  width: 80%;
+  width: 85%;
 }
 
 .carousel {
   width: 30%;
+  box-shadow: 8px 8px 25px black, -8px 8px 25px black;
 }
 
 /* media queries */
@@ -111,6 +116,25 @@ h4 {
   .project_title {
     font-size: 2rem;
   }
+
+  .carousel {
+    width: 300px;
+  }
+
+}
+
+/* large screen */
+@media only screen and (max-width: 1200px) {
+  .carousel_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    margin-bottom: 30px;
+    width: 500px;
+  }
+
 }
 
 /* xl screen */
