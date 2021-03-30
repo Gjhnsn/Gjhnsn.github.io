@@ -81,6 +81,7 @@ h4 {
   min-width: 1200px;
 } */
 
+
 .carousel_section {
   width: 85%;
 }
@@ -88,7 +89,13 @@ h4 {
 .carousel {
   width: 30%;
   box-shadow: 8px 8px 25px black, -8px 8px 25px black;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(39, 39, 39))0;
 }
+
+.project_link {
+  margin: 10px;
+}
+
 
 /* media queries */
 
@@ -101,6 +108,7 @@ h4 {
   .divider_1 {
     top: 680px;
   }
+
 }
 
 /* medium screen */
@@ -117,25 +125,29 @@ h4 {
     font-size: 2rem;
   }
 
-  .carousel {
-    width: 300px;
+  .carousel_section {
+    width: 100%;
   }
 
+  /* .carousel {
+    width: 100%;
+  } */
 }
 
 /* large screen */
 @media only screen and (max-width: 1200px) {
   .carousel_section {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    flex-direction: column
   }
 
   .carousel {
     margin-bottom: 30px;
-    width: 500px;
+    width: 65%;
   }
-
 }
+
 
 /* xl screen */
 @media only screen and (min-width: 1500px) {
