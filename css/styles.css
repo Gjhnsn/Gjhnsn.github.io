@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -13,6 +18,10 @@ h3,
 h4 {
   font-family: "Varela Round", sans-serif;
 }
+
+/* .navbar {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(39, 39, 39))0;
+} */
 
 .gj_logo {
   height: 50px;
@@ -27,8 +36,10 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  bottom: 80px;
   border-radius: 0;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .jumbotron h1 {
@@ -53,8 +64,7 @@ h4 {
 /* 1st divider and prject area */
 
 .divider_1 {
-  height: 100vh;
-  min-height: 800px;
+  /* min-height: 800px; */
   width: 100%;
   background-image: linear-gradient(to bottom right,
       rgb(11, 110, 80),
@@ -62,6 +72,8 @@ h4 {
   transform: skewY(9deg);
   position: absolute;
   top: 1100px;
+  padding-top: 50px;
+  padding-bottom: 130px;
 }
 
 .unskew {
@@ -73,7 +85,6 @@ h4 {
   font-weight: 200;
   color: white;
   text-align: center;
-  margin-top: 50px;
   letter-spacing: 5px;
 }
 
@@ -94,8 +105,48 @@ h4 {
 
 .project_link {
   margin: 10px;
+  background-color: rgba(255, 255, 255, 0.274);
+  border: white solid 1px;
 }
 
+.project_link:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.parallax_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.575)),
+    url(/img/laptop.jpg);
+  height: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  top: 120px;
+  z-index: -1;
+}
+
+.divider_2 {
+  width: 100%;
+  background-image: linear-gradient(to bottom right,
+      rgb(25, 152, 112),
+      rgb(11, 78, 73));
+  transform: skewY(9deg);
+  padding-bottom: 250px;
+  padding-top: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 110px;
+  margin-top: auto;
+  width: 100%;
+}
 
 /* media queries */
 
@@ -105,9 +156,13 @@ h4 {
     min-height: 800px;
   }
 
-  .divider_1 {
-    top: 680px;
+  .parallax_2 {
+    top: 1500px
   }
+
+  /* .divider_1 {
+    top: 680px;
+  } */
 
 }
 
@@ -129,10 +184,16 @@ h4 {
     width: 100%;
   }
 
-  /* .carousel {
-    width: 100%;
+  .parallax_2 {
+    top: 1100px;
+  }
+
+  /* .divider_1 {
+    min-height: 500px;
   } */
 }
+
+
 
 /* large screen */
 @media only screen and (max-width: 1200px) {
@@ -145,6 +206,14 @@ h4 {
   .carousel {
     margin-bottom: 30px;
     width: 65%;
+  }
+
+  /* .divider_1 {
+    height: 220VH;
+  } */
+
+  .parallax_2 {
+    top: 700px;
   }
 }
 
@@ -166,6 +235,6 @@ h4 {
   }
 
   .divider_1 {
-    top: 730px;
+    top: 680px;
   }
 }
