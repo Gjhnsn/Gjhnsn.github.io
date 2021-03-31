@@ -28,9 +28,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="home">
     <a class="navbar-brand" href="#"><img class="gj_logo ml-md-3" src="img/gj-logo-white.svg"
         alt="the letters g and j joined in a logo" /></a>
+    <i class="fab fa-github text-light h2 mt-2 ml-2"></i>
     <button class="navbar-toggler" type="button" data-tgit puoggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,13 +40,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto mt-2 mr-3 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -53,12 +54,15 @@
 
   <!-- jumbotron -->
 
+
+
   <div class="jumbotron text-lg-right text-center mb-0">
     <h1 class="display-2 text-light mr-lg-5 jumbo_text">Garrett Johnson</h1>
     <p class="lead text-secondary mr-lg-5 jumbo_text">Portfolio</p>
     <p class="lead mr-lg-5">
-      <a class="btn btn-primary btn-lg jumbo_button" href="#" role="button">Learn more</a>
+      <a class="btn btn-primary btn-lg jumbo_button" href="#contact" role="button">Get In Touch</a>
     </p>
+
 
 
   </div>
@@ -67,7 +71,7 @@
   <div class="container-fluid divider_1">
     <div class="row">
       <div class="col-lg unskew">
-        <p class="project_title">projects</p>
+        <p class="project_title" id="projects">projects</p>
       </div>
     </div>
     <!-- carousel section -->
@@ -162,10 +166,32 @@
 
   </div>
 
-  <div class="parallax_2"></div>
+  <div class="parallax_2">
+  </div>
+  <div class="container-fluid contact_section">
+    <div class="col-lg ">
+      <p class="project_title" id="contact">get in touch</p>
+    </div>
+    <div class="form_box container-sm">
+      <form>
+        <div class="form-group">
+          <label for="InputName">Name</label>
+          <input type="text" class="form-control" id="InputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="Textarea">Message</label>
+          <textarea class="form-control" id="Textarea" rows="3" placeholder="Message"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- form section -->
-  <div class="container-fluid divider_2">
+  <!-- <div class="container-fluid divider_2">
     <div class="col-lg unskew">
       <p class="project_title">get in touch</p>
     </div>
@@ -186,16 +212,22 @@
       </form>
     </div>
   </div>
-  </form>
+  </form> -->
 
 
   <!-- footer -->
-  <footer class="d-flex align-items-end justify-content-start footer">
+  <footer class="d-flex align-items-center justify-content-between footer">
     <!-- Copyright -->
+    <div class="email pl-5">
+      <div class="icons pr-5 py-3">
+        <i class="fab fa-github pr-3"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>garrettjtrains@gmail.com</p>
+    </div>
     <div class="p-5">
       © Copyright: 2021 Garrett Johnson
     </div>
-    <!-- Copyright -->
   </footer>
 
 
