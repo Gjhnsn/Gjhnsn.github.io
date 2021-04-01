@@ -48,7 +48,7 @@ h4 {
 }
 
 .jumbotron h1 {
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
 .jumbotron p {
@@ -68,20 +68,20 @@ h4 {
   border: none;
 }
 
-
 /* 1st divider and prject area */
 
 .divider_1 {
-  /* min-height: 800px; */
   width: 100%;
-  background-image: linear-gradient(to bottom right,
-      rgb(11, 110, 80),
-      rgb(54, 161, 129));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(11, 110, 80),
+    rgb(54, 161, 129)
+  );
   transform: skewY(9deg);
   position: absolute;
   top: 1100px;
-  padding-top: 100px;
-  padding-bottom: 180px;
+  padding-top: 175px;
+  padding-bottom: 275px;
 }
 
 .unskew {
@@ -94,12 +94,12 @@ h4 {
   color: white;
   text-align: center;
   letter-spacing: 5px;
+  padding-bottom: 30px;
 }
 
 /* .projects {
   min-width: 1200px;
 } */
-
 
 .carousel_section {
   width: 85%;
@@ -108,7 +108,7 @@ h4 {
 .carousel {
   width: 30%;
   box-shadow: 8px 8px 25px black, -8px 8px 25px black;
-  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(39, 39, 39))0;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(39, 39, 39)) 0;
 }
 
 .project_link {
@@ -126,19 +126,19 @@ h4 {
 .parallax_2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.575)),
     url(/img/laptop.jpg);
-  height: 110vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  top: 290px;
+  top: 293px;
   z-index: -1;
 }
 
 .contact_section {
   position: relative;
-  bottom: 250px;
+  bottom: 375px;
 }
 
 .form_box {
@@ -160,9 +160,11 @@ textarea {
   margin-top: auto;
   width: 100%;
   height: 125px;
-  background-image: linear-gradient(to bottom right,
-      rgb(25, 152, 112),
-      rgb(11, 78, 73));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(25, 152, 112),
+    rgb(11, 78, 73)
+  );
   color: white;
   bottom: -20px;
 }
@@ -180,17 +182,16 @@ textarea {
   }
 
   .parallax_2 {
-    top: 1500px
+    top: 500px;
   }
-
-  /* .divider_1 {
-    top: 680px;
-  } */
-
 }
 
 /* medium screen */
 @media only screen and (max-width: 768px) {
+  .git_nav {
+    display: none;
+  }
+
   .jumbotron h1 {
     font-size: 3rem;
   }
@@ -211,19 +212,17 @@ textarea {
     top: 1100px;
   }
 
-  /* .divider_1 {
-    min-height: 500px;
-  } */
+  .contact_section {
+    top: 100px;
+  }
 }
-
-
 
 /* large screen */
 @media only screen and (max-width: 1200px) {
   .carousel_section {
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
   }
 
   .carousel {
@@ -231,20 +230,26 @@ textarea {
     width: 65%;
   }
 
-  /* .divider_1 {
-    height: 220VH;
-  } */
-
-  .parallax_2 {
-    top: 700px;
+  .divider_1 {
+    padding-bottom: 120px;
+    padding-top: 100px;
   }
 
-}
+  .parallax_2 {
+    top: 800px;
+  }
 
+  .contact_section {
+    top: 200px;
+  }
+
+  .footer {
+    bottom: -520px;
+  }
+}
 
 /* xl screen */
 @media only screen and (min-width: 1500px) {
-
   .jumbo_text,
   .jumbo_button {
     position: relative;
@@ -255,10 +260,10 @@ textarea {
 /* laptop */
 @media only screen and (max-width: 2560px) {
   .jumbotron {
-    min-height: 800px;
+    height: 1200px;
   }
 
   .divider_1 {
-    top: 680px;
+    top: 1200px;
   }
 }
