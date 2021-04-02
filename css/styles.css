@@ -65,8 +65,9 @@ h4 {
 
 .jumbo_button:hover,
 .form_button:hover {
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   color: black;
+  border-color: rgb(230, 230, 230);
 }
 
 /* 1st divider and prject area */
@@ -98,6 +99,16 @@ h4 {
   padding-bottom: 30px;
 }
 
+.pr_title {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  margin-bottom: -15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* .projects {
   min-width: 1200px;
 } */
@@ -119,7 +130,7 @@ h4 {
 }
 
 .project_link:hover {
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   color: black;
   border: none;
 }
@@ -138,8 +149,8 @@ h4 {
 }
 
 .contact_section {
-  position: relative;
-  bottom: 385px;
+  position: absolute;
+  bottom: 0;
 }
 
 .form_box {
@@ -167,7 +178,7 @@ textarea {
     rgb(11, 78, 73)
   );
   color: white;
-  bottom: 0;
+  bottom: -350px;
 }
 
 .form_button {
@@ -204,9 +215,9 @@ textarea {
     height: 50vh;
   }
 
-  .contact_section {
+  /* .contact_section {
     top: 50px;
-  }
+  } */
 }
 
 /* medium screen */
@@ -233,17 +244,17 @@ textarea {
     font-size: 2rem;
   }
 
+  .pr_title {
+    font-size: 01rem;
+  }
+
   .carousel_section {
     width: 100%;
   }
 
-  .parallax_2 {
-    top: 700px;
-    height: 70vh;
-  }
-
-  .contact_section {
-    top: 20px;
+  .footer p,
+  .footer .p-5 {
+    font-size: 0.7rem;
   }
 }
 
@@ -256,7 +267,7 @@ textarea {
   }
 
   .carousel {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 65%;
   }
 
@@ -266,16 +277,16 @@ textarea {
   }
 
   .parallax_2 {
-    top: 800px;
+    top: 1000px;
     height: 90vh;
   }
 
   .contact_section {
-    top: 190px;
+    bottom: -850px;
   }
 
   .footer {
-    bottom: -480px;
+    bottom: -1120px;
   }
 }
 
@@ -290,12 +301,6 @@ textarea {
     top: 325px;
   }
 }
-
-/* @media only screen and (max-width: 1500px) {
-  .parallax_2 {
-    top: 350px;
-  }
-} */
 
 /* laptop */
 @media only screen and (max-width: 2560px) {
