@@ -211,12 +211,12 @@ textarea {
 
 @media only screen and (max-width: 650px) {
   .parallax_2 {
-    top: 100px;
-    height: 50vh;
+    top: 975px;
+    max-height: 50vh;
   }
 
   /* .contact_section {
-    top: 50px;
+    bottom: -600px;
   } */
 }
 
@@ -250,6 +250,15 @@ textarea {
 
   .carousel_section {
     width: 100%;
+  }
+
+  .parallax_2 {
+    top: 100px;
+    max-height: 70vh;
+  }
+
+  .contact_section {
+    bottom: -600px;
   }
 
   .footer p,
